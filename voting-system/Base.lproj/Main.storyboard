@@ -26,11 +26,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="make_form_button"/>
+                                <connections>
+                                    <segue destination="Rji-xP-fpr" kind="presentation" identifier="toLoginViewController" id="EnP-AS-Xdf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LmT-gB-vTL"/>
                     <connections>
                         <outlet property="answer_button" destination="GB2-b9-hSX" id="Ow4-rm-8ye"/>
                         <outlet property="make_form_button" destination="Lc3-KB-LPo" id="Hyu-rh-3ZJ"/>
@@ -38,7 +42,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="253.62318840579712" y="65.625"/>
+            <point key="canvasLocation" x="-419" y="88"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="phS-y2-dLo">
+            <objects>
+                <viewController id="Rji-xP-fpr" customClass="LoginViewController" customModule="voting_system" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rDo-T4-t2m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4k-8g-5n8">
+                                <rect key="frame" x="20" y="29" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="backViewController:" destination="Rji-xP-fpr" eventType="touchUpInside" id="VSr-9m-P0W"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ログイン画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXc-jc-KGy">
+                                <rect key="frame" x="112" y="72" width="156" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KM9-Gu-Fq5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bj1-b8-RSb"/>
+                    <connections>
+                        <outlet property="back_viewcontroller" destination="V4k-8g-5n8" id="dyJ-iz-LNL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4y6-sB-zCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408.69565217391306" y="87.723214285714278"/>
         </scene>
     </scenes>
 </document>
