@@ -15,6 +15,8 @@
 		A310C85524E50A9800C62AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A310C85324E50A9800C62AB9 /* LaunchScreen.storyboard */; };
 		A310C86024E50A9800C62AB9 /* voting_systemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C85F24E50A9800C62AB9 /* voting_systemTests.swift */; };
 		A310C86B24E50A9800C62AB9 /* voting_systemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C86A24E50A9800C62AB9 /* voting_systemUITests.swift */; };
+		A310C87924E5594600C62AB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C87824E5594600C62AB9 /* LoginViewController.swift */; };
+		A310C87B24E561AC00C62AB9 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A310C86624E50A9800C62AB9 /* voting-systemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "voting-systemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A310C86A24E50A9800C62AB9 /* voting_systemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voting_systemUITests.swift; sourceTree = "<group>"; };
 		A310C86C24E50A9800C62AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A310C87824E5594600C62AB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				A310C84A24E50A9600C62AB9 /* SceneDelegate.swift */,
 				A310C84C24E50A9600C62AB9 /* ViewController.swift */,
 				A310C84E24E50A9600C62AB9 /* Main.storyboard */,
+				A310C87824E5594600C62AB9 /* LoginViewController.swift */,
+				A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */,
 				A310C85124E50A9800C62AB9 /* Assets.xcassets */,
 				A310C85324E50A9800C62AB9 /* LaunchScreen.storyboard */,
 				A310C85624E50A9800C62AB9 /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A310C87924E5594600C62AB9 /* LoginViewController.swift in Sources */,
 				A310C84D24E50A9600C62AB9 /* ViewController.swift in Sources */,
+				A310C87B24E561AC00C62AB9 /* AnswerViewController.swift in Sources */,
 				A310C84924E50A9600C62AB9 /* AppDelegate.swift in Sources */,
 				A310C84B24E50A9600C62AB9 /* SceneDelegate.swift in Sources */,
 			);
