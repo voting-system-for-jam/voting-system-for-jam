@@ -1,0 +1,6 @@
+framework module Pods_voting_system {
+  umbrella header "Pods-voting-system-umbrella.h"
+
+  export *
+  module * { export * }
+}
