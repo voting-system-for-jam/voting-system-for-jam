@@ -77,6 +77,9 @@
                                 <rect key="frame" x="191.5" y="267.5" width="31" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="送信"/>
+                                <connections>
+                                    <action selector="sendFunction:" destination="WEu-OF-P7F" eventType="touchUpInside" id="k1F-fB-GCe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLi-HW-XY0">
                                 <rect key="frame" x="20" y="29" width="31" height="30"/>
@@ -101,6 +104,8 @@
                     </view>
                     <connections>
                         <outlet property="backviewcontroller_button" destination="lLi-HW-XY0" id="njs-ka-HDB"/>
+                        <outlet property="formatedTextField" destination="OSJ-d4-wuZ" id="TvZ-K4-erb"/>
+                        <outlet property="sendButton" destination="SI0-MU-Fgl" id="17K-9j-sE6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eed-yt-Ex5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -160,6 +165,9 @@
                                 <rect key="frame" x="191.5" y="327.5" width="31" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="送信"/>
+                                <connections>
+                                    <action selector="sendFunction:" destination="Rji-xP-fpr" eventType="touchUpInside" id="iHQ-6N-mhM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -185,6 +193,8 @@
                     <navigationItem key="navigationItem" id="Bj1-b8-RSb"/>
                     <connections>
                         <outlet property="back_viewcontroller" destination="V4k-8g-5n8" id="dyJ-iz-LNL"/>
+                        <outlet property="passwordTextField" destination="jdr-cB-P5C" id="xvc-E4-qrz"/>
+                        <outlet property="userNameTextField" destination="Y9I-lq-TUV" id="7wR-EO-4Ne"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4y6-sB-zCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

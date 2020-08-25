@@ -11,6 +11,8 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var back_viewcontroller: UIButton!
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func backViewController(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func sendFunction(_ sender: Any) {
+        userNameTextField.endEditing(true)
+        passwordTextField.endEditing(true)
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     /*
