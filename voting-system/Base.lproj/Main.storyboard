@@ -66,7 +66,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OSJ-d4-wuZ">
-                                <rect key="frame" x="107" y="212" width="200" height="34"/>
+                                <rect key="frame" x="107" y="188.5" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="STI-Mi-qQj"/>
                                 </constraints>
@@ -74,7 +74,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI0-MU-Fgl">
-                                <rect key="frame" x="191.5" y="291" width="31" height="30"/>
+                                <rect key="frame" x="191.5" y="267.5" width="31" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="送信"/>
                             </button>
@@ -95,7 +95,7 @@
                             <constraint firstItem="RBb-bW-9fR" firstAttribute="top" secondItem="IdY-en-OVW" secondAttribute="top" constant="149" id="Ybu-8N-YPY"/>
                             <constraint firstItem="lLi-HW-XY0" firstAttribute="leading" secondItem="IdY-en-OVW" secondAttribute="leading" constant="20" id="nhb-sA-J0e"/>
                             <constraint firstItem="SI0-MU-Fgl" firstAttribute="top" secondItem="OSJ-d4-wuZ" secondAttribute="bottom" constant="45" id="qCL-Gl-AdG"/>
-                            <constraint firstItem="OSJ-d4-wuZ" firstAttribute="top" secondItem="RBb-bW-9fR" secondAttribute="bottom" constant="42" id="sUW-wr-46Y"/>
+                            <constraint firstItem="OSJ-d4-wuZ" firstAttribute="top" secondItem="RBb-bW-9fR" secondAttribute="bottom" constant="18.5" id="sUW-wr-46Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IdY-en-OVW"/>
                     </view>
@@ -135,7 +135,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワード" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX8-G6-Ek5">
-                                <rect key="frame" x="66" y="228" width="87" height="20.5"/>
+                                <rect key="frame" x="66" y="238.5" width="87" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -149,7 +149,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdr-cB-P5C">
-                                <rect key="frame" x="66" y="277" width="200" height="34"/>
+                                <rect key="frame" x="66" y="277.5" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="iur-JC-34b"/>
                                 </constraints>
@@ -157,26 +157,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YJ-B5-Jta">
-                                <rect key="frame" x="191.5" y="348" width="31" height="30"/>
+                                <rect key="frame" x="191.5" y="327.5" width="31" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="送信"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7YJ-B5-Jta" firstAttribute="top" secondItem="bXc-jc-KGy" secondAttribute="bottom" constant="255.5" id="2G1-Ab-8mA"/>
+                            <constraint firstItem="7YJ-B5-Jta" firstAttribute="top" secondItem="bXc-jc-KGy" secondAttribute="bottom" constant="235" id="2G1-Ab-8mA"/>
                             <constraint firstItem="Y9I-lq-TUV" firstAttribute="top" secondItem="k6L-8X-SsW" secondAttribute="bottom" constant="18.5" id="3M7-2P-cie"/>
                             <constraint firstItem="7YJ-B5-Jta" firstAttribute="centerX" secondItem="rDo-T4-t2m" secondAttribute="centerX" id="6kU-sT-M3I"/>
+                            <constraint firstItem="sX8-G6-Ek5" firstAttribute="top" secondItem="Y9I-lq-TUV" secondAttribute="bottom" constant="18.5" id="6lp-Ab-8FE"/>
                             <constraint firstItem="k6L-8X-SsW" firstAttribute="leading" secondItem="KM9-Gu-Fq5" secondAttribute="leading" constant="66" id="7wW-3g-N7e"/>
                             <constraint firstItem="jdr-cB-P5C" firstAttribute="leading" secondItem="KM9-Gu-Fq5" secondAttribute="leading" constant="66" id="9L6-tE-JcT"/>
                             <constraint firstItem="V4k-8g-5n8" firstAttribute="top" secondItem="KM9-Gu-Fq5" secondAttribute="top" constant="29" id="AzL-9B-t2P"/>
                             <constraint firstItem="k6L-8X-SsW" firstAttribute="top" secondItem="bXc-jc-KGy" secondAttribute="bottom" constant="54.5" id="O45-2g-Fqc"/>
-                            <constraint firstItem="sX8-G6-Ek5" firstAttribute="top" secondItem="Y9I-lq-TUV" secondAttribute="bottom" constant="8" id="XTt-Jq-eCj"/>
+                            <constraint firstItem="sX8-G6-Ek5" firstAttribute="top" secondItem="Y9I-lq-TUV" secondAttribute="bottom" constant="18.5" id="XTt-Jq-eCj"/>
                             <constraint firstItem="sX8-G6-Ek5" firstAttribute="leading" secondItem="KM9-Gu-Fq5" secondAttribute="leading" constant="66" id="Xxd-W2-Zkj"/>
                             <constraint firstItem="Y9I-lq-TUV" firstAttribute="leading" secondItem="KM9-Gu-Fq5" secondAttribute="leading" constant="66" id="ovX-qm-nwW"/>
                             <constraint firstItem="bXc-jc-KGy" firstAttribute="top" secondItem="KM9-Gu-Fq5" secondAttribute="top" constant="72" id="s6i-37-JjX"/>
                             <constraint firstItem="V4k-8g-5n8" firstAttribute="leading" secondItem="KM9-Gu-Fq5" secondAttribute="leading" constant="20" id="vep-6b-SwN"/>
-                            <constraint firstItem="jdr-cB-P5C" firstAttribute="top" secondItem="sX8-G6-Ek5" secondAttribute="bottom" constant="28.5" id="x6a-cR-l9U"/>
+                            <constraint firstItem="jdr-cB-P5C" firstAttribute="top" secondItem="sX8-G6-Ek5" secondAttribute="bottom" constant="18.5" id="x6a-cR-l9U"/>
                             <constraint firstItem="bXc-jc-KGy" firstAttribute="centerX" secondItem="rDo-T4-t2m" secondAttribute="centerX" id="zGR-hI-WfI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KM9-Gu-Fq5"/>
