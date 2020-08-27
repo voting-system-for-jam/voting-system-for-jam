@@ -12,6 +12,8 @@ class AnswerViewController: UIViewController {
 
     
     @IBOutlet weak var backviewcontroller_button: UIButton!
+    @IBOutlet weak var formatedTextField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,16 @@ class AnswerViewController: UIViewController {
     
     @IBAction func back_viewcontroller(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func sendFunction(_ sender: Any) {
+        formatedTextField.endEditing(true)
+    }
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.view.endEditing(true)
     }
     
     /*

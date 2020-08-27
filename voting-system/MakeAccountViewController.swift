@@ -1,37 +1,37 @@
 //
-//  LoginViewController.swift
+//  MakeAccountViewController.swift
 //  voting-system
 //
-//  Created by Ryota Sato on 2020/08/13.
+//  Created by Ryota Sato on 2020/08/27.
 //  Copyright © 2020 Ryota. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class MakeAccountViewController: UIViewController {
 
-    @IBOutlet weak var back_viewcontroller: UIButton!
+    @IBOutlet weak var back_to_loginView: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var make_accountButton: UIButton!
+    @IBOutlet weak var send_button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backViewController(_ sender: Any) {
+    @IBAction func back_to_loginView(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func sendFunction(_ sender: Any) {
+    @IBAction func send_functon(_ sender: Any) {
         userNameTextField.endEditing(true)
         passwordTextField.endEditing(true)
     }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
     /*
     // MARK: - Navigation
 

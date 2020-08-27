@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		A310C86B24E50A9800C62AB9 /* voting_systemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C86A24E50A9800C62AB9 /* voting_systemUITests.swift */; };
 		A310C87924E5594600C62AB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C87824E5594600C62AB9 /* LoginViewController.swift */; };
 		A310C87B24E561AC00C62AB9 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */; };
+		A31A44A724F794E700EA0004 /* MakeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A44A624F794E700EA0004 /* MakeAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		A310C86C24E50A9800C62AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A310C87824E5594600C62AB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		A31A44A624F794E700EA0004 /* MakeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAccountViewController.swift; sourceTree = "<group>"; };
 		B11DF38658D057DB71116485 /* Pods-voting-system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voting-system.debug.xcconfig"; path = "Target Support Files/Pods-voting-system/Pods-voting-system.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +117,6 @@
 				68E922F75790D50EE1BDDA11 /* Pods-voting-systemTests.debug.xcconfig */,
 				A0BF2845059328C50A7F949B /* Pods-voting-systemTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,6 +149,7 @@
 				A310C84A24E50A9600C62AB9 /* SceneDelegate.swift */,
 				A310C84C24E50A9600C62AB9 /* ViewController.swift */,
 				A310C84E24E50A9600C62AB9 /* Main.storyboard */,
+				A31A44A624F794E700EA0004 /* MakeAccountViewController.swift */,
 				A310C87824E5594600C62AB9 /* LoginViewController.swift */,
 				A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */,
 				A310C85124E50A9800C62AB9 /* Assets.xcassets */,
@@ -416,6 +418,7 @@
 			files = (
 				A310C87924E5594600C62AB9 /* LoginViewController.swift in Sources */,
 				A310C84D24E50A9600C62AB9 /* ViewController.swift in Sources */,
+				A31A44A724F794E700EA0004 /* MakeAccountViewController.swift in Sources */,
 				A310C87B24E561AC00C62AB9 /* AnswerViewController.swift in Sources */,
 				A310C84924E50A9600C62AB9 /* AppDelegate.swift in Sources */,
 				A310C84B24E50A9600C62AB9 /* SceneDelegate.swift in Sources */,
