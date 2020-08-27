@@ -22,6 +22,7 @@
 		A310C87924E5594600C62AB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C87824E5594600C62AB9 /* LoginViewController.swift */; };
 		A310C87B24E561AC00C62AB9 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */; };
 		A31A44A724F794E700EA0004 /* MakeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A44A624F794E700EA0004 /* MakeAccountViewController.swift */; };
+		A31A44A924F7A82D00EA0004 /* NewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A44A824F7A82D00EA0004 /* NewFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		A310C87824E5594600C62AB9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 		A31A44A624F794E700EA0004 /* MakeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAccountViewController.swift; sourceTree = "<group>"; };
+		A31A44A824F7A82D00EA0004 /* NewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFormViewController.swift; sourceTree = "<group>"; };
 		B11DF38658D057DB71116485 /* Pods-voting-system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voting-system.debug.xcconfig"; path = "Target Support Files/Pods-voting-system/Pods-voting-system.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 				A310C84A24E50A9600C62AB9 /* SceneDelegate.swift */,
 				A310C84C24E50A9600C62AB9 /* ViewController.swift */,
 				A310C84E24E50A9600C62AB9 /* Main.storyboard */,
+				A31A44A824F7A82D00EA0004 /* NewFormViewController.swift */,
 				1DC9884C24F7A474005404C4 /* MakeFormViewController.swift */,
 				A31A44A624F794E700EA0004 /* MakeAccountViewController.swift */,
 				A310C87824E5594600C62AB9 /* LoginViewController.swift */,
@@ -422,6 +425,7 @@
 				A310C87924E5594600C62AB9 /* LoginViewController.swift in Sources */,
 				A310C84D24E50A9600C62AB9 /* ViewController.swift in Sources */,
 				A31A44A724F794E700EA0004 /* MakeAccountViewController.swift in Sources */,
+				A31A44A924F7A82D00EA0004 /* NewFormViewController.swift in Sources */,
 				1DC9884D24F7A474005404C4 /* MakeFormViewController.swift in Sources */,
 				A310C87B24E561AC00C62AB9 /* AnswerViewController.swift in Sources */,
 				A310C84924E50A9600C62AB9 /* AppDelegate.swift in Sources */,
