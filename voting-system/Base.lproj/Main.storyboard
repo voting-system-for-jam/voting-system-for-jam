@@ -329,6 +329,7 @@
                                 <state key="normal" title="フォーム新規作成"/>
                                 <connections>
                                     <action selector="sendFunction:" destination="Rji-xP-fpr" eventType="touchUpInside" id="s2L-Ti-ppY"/>
+                                    <segue destination="m3o-Ip-byj" kind="presentation" id="MBn-F0-Zbt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------------------------------------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55j-np-QZH">
@@ -366,7 +367,87 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="boO-Fi-Twm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="-287"/>
+            <point key="canvasLocation" x="1220" y="-654"/>
+        </scene>
+        <!--New Form View Controller-->
+        <scene sceneID="dfR-iP-Rnq">
+            <objects>
+                <viewController id="m3o-Ip-byj" customClass="NewFormViewController" customModule="voting_system" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1tH-Gy-6SC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmj-EH-HRI">
+                                <rect key="frame" x="20" y="29" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="backBeforeView:" destination="mqB-Iu-hWI" eventType="touchUpInside" id="pWB-zq-1aW"/>
+                                    <action selector="backButton:" destination="m3o-Ip-byj" eventType="touchUpInside" id="lHO-eT-FlA"/>
+                                    <action selector="backViewController:" destination="Rji-xP-fpr" eventType="touchUpInside" id="AhE-zP-lEa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フォーム名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccv-rs-7SW">
+                                <rect key="frame" x="163.5" y="100" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-v9-9iP">
+                                <rect key="frame" x="107" y="141" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QOf-pD-jkP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="チーム数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8t-M4-97J">
+                                <rect key="frame" x="172" y="195" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Qs-gh-chk">
+                                <rect key="frame" x="187" y="236" width="40" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Afm-WU-qnt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkQ-Dc-Ndc">
+                                <rect key="frame" x="191.5" y="290" width="31" height="30"/>
+                                <state key="normal" title="送信"/>
+                                <connections>
+                                    <action selector="send_form:" destination="m3o-Ip-byj" eventType="touchUpInside" id="b6Y-UA-HqN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zmj-EH-HRI" firstAttribute="leading" secondItem="ap8-sR-bhH" secondAttribute="leading" constant="20" id="1CG-Fp-21B"/>
+                            <constraint firstItem="kkQ-Dc-Ndc" firstAttribute="top" secondItem="1Qs-gh-chk" secondAttribute="bottom" constant="20" id="2EY-jU-ycu"/>
+                            <constraint firstItem="Ccv-rs-7SW" firstAttribute="centerX" secondItem="1tH-Gy-6SC" secondAttribute="centerX" id="4vd-46-fgQ"/>
+                            <constraint firstItem="N9f-v9-9iP" firstAttribute="centerX" secondItem="1tH-Gy-6SC" secondAttribute="centerX" id="BaB-xs-Kuc"/>
+                            <constraint firstItem="Ccv-rs-7SW" firstAttribute="top" secondItem="ap8-sR-bhH" secondAttribute="top" constant="100" id="D9C-fn-HgG"/>
+                            <constraint firstItem="N9f-v9-9iP" firstAttribute="top" secondItem="Ccv-rs-7SW" secondAttribute="bottom" constant="20" id="GO0-Ti-7ck"/>
+                            <constraint firstItem="Zmj-EH-HRI" firstAttribute="top" secondItem="ap8-sR-bhH" secondAttribute="top" constant="29" id="O2N-ln-7sb"/>
+                            <constraint firstItem="1Qs-gh-chk" firstAttribute="top" secondItem="G8t-M4-97J" secondAttribute="bottom" constant="20" id="U90-yi-R3o"/>
+                            <constraint firstItem="1Qs-gh-chk" firstAttribute="centerX" secondItem="1tH-Gy-6SC" secondAttribute="centerX" id="ZyH-Bn-LmY"/>
+                            <constraint firstItem="G8t-M4-97J" firstAttribute="top" secondItem="N9f-v9-9iP" secondAttribute="bottom" constant="20" id="iG7-o4-1yw"/>
+                            <constraint firstItem="kkQ-Dc-Ndc" firstAttribute="centerX" secondItem="1tH-Gy-6SC" secondAttribute="centerX" id="v2M-Ha-MHy"/>
+                            <constraint firstItem="G8t-M4-97J" firstAttribute="centerX" secondItem="1tH-Gy-6SC" secondAttribute="centerX" id="vV9-7p-qZf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ap8-sR-bhH"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Zmj-EH-HRI" id="Hsn-z3-6d7"/>
+                        <outlet property="formTextField" destination="N9f-v9-9iP" id="iJJ-hn-srr"/>
+                        <outlet property="teamNumberTextField" destination="1Qs-gh-chk" id="lqp-Ue-p9B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMH-8E-1wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2186.9565217391305" y="-654.24107142857144"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
