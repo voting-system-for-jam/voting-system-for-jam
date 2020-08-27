@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DC9884B24F79AB8005404C4 /* MakeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9884A24F79AB8005404C4 /* MakeFormViewController.swift */; };
 		A310C84924E50A9600C62AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C84824E50A9600C62AB9 /* AppDelegate.swift */; };
 		A310C84B24E50A9600C62AB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C84A24E50A9600C62AB9 /* SceneDelegate.swift */; };
 		A310C84D24E50A9600C62AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C84C24E50A9600C62AB9 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DC9884A24F79AB8005404C4 /* MakeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFormViewController.swift; sourceTree = "<group>"; };
 		A310C84524E50A9600C62AB9 /* voting-system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "voting-system.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A310C84824E50A9600C62AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A310C84A24E50A9600C62AB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				A310C84A24E50A9600C62AB9 /* SceneDelegate.swift */,
 				A310C84C24E50A9600C62AB9 /* ViewController.swift */,
 				A310C84E24E50A9600C62AB9 /* Main.storyboard */,
+				1DC9884A24F79AB8005404C4 /* MakeFormViewController.swift */,
 				A310C87824E5594600C62AB9 /* LoginViewController.swift */,
 				A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */,
 				A310C85124E50A9800C62AB9 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC9884B24F79AB8005404C4 /* MakeFormViewController.swift in Sources */,
 				A310C87924E5594600C62AB9 /* LoginViewController.swift in Sources */,
 				A310C84D24E50A9600C62AB9 /* ViewController.swift in Sources */,
 				A310C87B24E561AC00C62AB9 /* AnswerViewController.swift in Sources */,

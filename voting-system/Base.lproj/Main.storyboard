@@ -201,5 +201,69 @@
             </objects>
             <point key="canvasLocation" x="317" y="-287"/>
         </scene>
+        <!--Make Form View Controller-->
+        <scene sceneID="Dik-iP-c2d">
+            <objects>
+                <viewController id="iI2-A3-q6b" customClass="MakeFormViewController" customModule="voting_system" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="25Y-7h-sX3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-vg-ZP0">
+                                <rect key="frame" x="20" y="73" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back:" destination="iI2-A3-q6b" eventType="touchUpInside" id="iEB-Lf-Mkk"/>
+                                    <action selector="backViewController:" destination="Rji-xP-fpr" eventType="touchUpInside" id="Stj-ju-9BI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フォーム管理画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw9-SX-jr5">
+                                <rect key="frame" x="137.5" y="116" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bui-Js-Q2x">
+                                <rect key="frame" x="145.5" y="197" width="123" height="30"/>
+                                <state key="normal" title="新規フォーム作成"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------------------------------------------------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3o-LX-jvo">
+                                <rect key="frame" x="23.5" y="314" width="367" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="過去に作成したフォーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG1-oe-JPV">
+                                <rect key="frame" x="111.5" y="407" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bui-Js-Q2x" firstAttribute="top" secondItem="aw9-SX-jr5" secondAttribute="bottom" constant="60" id="6Fh-GT-49g"/>
+                            <constraint firstItem="CG1-oe-JPV" firstAttribute="top" secondItem="u3o-LX-jvo" secondAttribute="bottom" constant="72" id="8nb-Cf-s4o"/>
+                            <constraint firstItem="u3o-LX-jvo" firstAttribute="centerX" secondItem="25Y-7h-sX3" secondAttribute="centerX" id="CqK-xs-eTT"/>
+                            <constraint firstItem="u3o-LX-jvo" firstAttribute="top" secondItem="bui-Js-Q2x" secondAttribute="bottom" constant="87" id="D2Q-17-8Jr"/>
+                            <constraint firstItem="CG1-oe-JPV" firstAttribute="centerX" secondItem="25Y-7h-sX3" secondAttribute="centerX" id="GAU-ea-AmQ"/>
+                            <constraint firstItem="bui-Js-Q2x" firstAttribute="centerX" secondItem="25Y-7h-sX3" secondAttribute="centerX" id="GhW-o4-tEr"/>
+                            <constraint firstItem="CG1-oe-JPV" firstAttribute="centerX" secondItem="25Y-7h-sX3" secondAttribute="centerX" id="JOv-AB-gjz"/>
+                            <constraint firstItem="aw9-SX-jr5" firstAttribute="top" secondItem="aEx-lV-EWA" secondAttribute="top" constant="72" id="Ohl-jV-f4P"/>
+                            <constraint firstItem="aw9-SX-jr5" firstAttribute="centerX" secondItem="25Y-7h-sX3" secondAttribute="centerX" id="R21-dv-YOo"/>
+                            <constraint firstItem="FBg-vg-ZP0" firstAttribute="leading" secondItem="aEx-lV-EWA" secondAttribute="leading" constant="20" id="dUy-eT-S6S"/>
+                            <constraint firstItem="FBg-vg-ZP0" firstAttribute="top" secondItem="aEx-lV-EWA" secondAttribute="top" constant="29" id="fu6-H7-XQd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aEx-lV-EWA"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackButton" destination="FBg-vg-ZP0" id="Aj9-79-ql4"/>
+                        <outlet property="newFormButton" destination="bui-Js-Q2x" id="fGa-eB-XqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgg-wg-m3j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="-284"/>
+        </scene>
     </scenes>
 </document>
