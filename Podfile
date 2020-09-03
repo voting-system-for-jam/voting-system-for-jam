@@ -19,5 +19,6 @@ target 'voting-system' do
   end
 
   pod 'RealmSwift'
+  pod 'Firebase/Auth'
 
 end
