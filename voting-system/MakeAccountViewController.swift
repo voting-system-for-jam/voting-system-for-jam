@@ -11,7 +11,7 @@ import UIKit
 class MakeAccountViewController: UIViewController {
 
     @IBOutlet weak var back_to_loginView: UIButton!
-    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var send_button: UIButton!
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class MakeAccountViewController: UIViewController {
     }
     
     @IBAction func send_functon(_ sender: Any) {
-        userNameTextField.endEditing(true)
+        emailTextField.endEditing(true)
         passwordTextField.endEditing(true)
     }
     

@@ -11,7 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var back_viewcontroller: UIButton!
-    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var make_accountButton: UIButton!
     @IBOutlet weak var sendButton: UIButton!
@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func sendFunction(_ sender: Any) {
-        userNameTextField.endEditing(true)
+        emailTextField.endEditing(true)
         passwordTextField.endEditing(true)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
