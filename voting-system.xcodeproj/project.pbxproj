@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		01932BA32C3BE71624FBE628 /* Pods_voting_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE320C2686925E5FCAD44EC /* Pods_voting_system.framework */; };
 		1DC9884D24F7A474005404C4 /* MakeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9884C24F7A474005404C4 /* MakeFormViewController.swift */; };
+		1DD9F09724FF7C96005DAD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9F09624FF7C96005DAD31 /* GoogleService-Info.plist */; };
+		1DD9F09824FF7C96005DAD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9F09624FF7C96005DAD31 /* GoogleService-Info.plist */; };
+		1DD9F09924FF7C96005DAD31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9F09624FF7C96005DAD31 /* GoogleService-Info.plist */; };
 		66ADF1D259D3516839E967C3 /* Pods_voting_system_voting_systemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B811AE3AF0A7E69937D100C /* Pods_voting_system_voting_systemUITests.framework */; };
 		78AF48816A9C8637AC316323 /* Pods_voting_systemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09334E280E646FCD9BE611D4 /* Pods_voting_systemTests.framework */; };
 		A310C84924E50A9600C62AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A310C84824E50A9600C62AB9 /* AppDelegate.swift */; };
@@ -47,6 +50,7 @@
 		11BDB2682370B7C6AD59715B /* Pods-voting-system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voting-system.release.xcconfig"; path = "Target Support Files/Pods-voting-system/Pods-voting-system.release.xcconfig"; sourceTree = "<group>"; };
 		1B811AE3AF0A7E69937D100C /* Pods_voting_system_voting_systemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voting_system_voting_systemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC9884C24F7A474005404C4 /* MakeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFormViewController.swift; sourceTree = "<group>"; };
+		1DD9F09624FF7C96005DAD31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		205200B2F855254555E6774C /* Pods-voting-system-voting-systemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voting-system-voting-systemUITests.debug.xcconfig"; path = "Target Support Files/Pods-voting-system-voting-systemUITests/Pods-voting-system-voting-systemUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4BE320C2686925E5FCAD44EC /* Pods_voting_system.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voting_system.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68E922F75790D50EE1BDDA11 /* Pods-voting-systemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voting-systemTests.debug.xcconfig"; path = "Target Support Files/Pods-voting-systemTests/Pods-voting-systemTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				A310C87824E5594600C62AB9 /* LoginViewController.swift */,
 				A310C87A24E561AC00C62AB9 /* AnswerViewController.swift */,
 				A310C85124E50A9800C62AB9 /* Assets.xcassets */,
+				1DD9F09624FF7C96005DAD31 /* GoogleService-Info.plist */,
 				A310C85324E50A9800C62AB9 /* LaunchScreen.storyboard */,
 				A310C85624E50A9800C62AB9 /* Info.plist */,
 			);
@@ -293,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A310C85524E50A9800C62AB9 /* LaunchScreen.storyboard in Resources */,
+				1DD9F09724FF7C96005DAD31 /* GoogleService-Info.plist in Resources */,
 				A310C85224E50A9800C62AB9 /* Assets.xcassets in Resources */,
 				A310C85024E50A9600C62AB9 /* Main.storyboard in Resources */,
 			);
@@ -302,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD9F09824FF7C96005DAD31 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DD9F09924FF7C96005DAD31 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
