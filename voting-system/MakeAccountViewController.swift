@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MakeAccountViewController: UIViewController {
 
@@ -27,6 +28,11 @@ class MakeAccountViewController: UIViewController {
     @IBAction func send_functon(_ sender: Any) {
         emailTextField.endEditing(true)
         passwordTextField.endEditing(true)
+        if let email = emailTextField.text, let password = passwordTextField.text{
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            }
+        }
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
