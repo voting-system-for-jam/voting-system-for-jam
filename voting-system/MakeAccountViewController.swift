@@ -60,15 +60,12 @@ class MakeAccountViewController: UIViewController {
                                 
                                 // 仮登録完了画面へ遷移する処理
                             }
-                            print("Fail1")
                             self.showErrorIfNeeded(error)
                         }
                     }
-                    print("Fail2")
                     self.showErrorIfNeeded(error)
                 }
             }
-            print("Fail3")
             self.showErrorIfNeeded(error)
         }
 
