@@ -25,12 +25,51 @@ class MakeAccountViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    private func showErrorIfNeeded(_ errorOrNil: Error?) {
+        // エラーがなければ何もしません
+        guard let error = errorOrNil else { return }
+        
+        let message = "エラーが起きました" // ここは後述しますが、とりあえず固定文字列
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func send_functon(_ sender: Any) {
+        // textfield close
         emailTextField.endEditing(true)
         passwordTextField.endEditing(true)
-        if let email = emailTextField.text, let password = passwordTextField.text{
-            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+  
+        // make account
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+            
+            guard let self = self else { return }
+            if let user = result?.user {
+                print("OK")
+                let req = user.createProfileChangeRequest()
+                req.displayName = email
+                req.commitChanges() { [weak self] error in
+                    guard let self = self else { return }
+                    if error == nil {
+                        user.sendEmailVerification() { [weak self] error in
+                            guard let self = self else { return }
+                            if error == nil {
+                                
+                                // 仮登録完了画面へ遷移する処理
+                            }
+                            print("Fail1")
+                            self.showErrorIfNeeded(error)
+                        }
+                    }
+                    print("Fail2")
+                    self.showErrorIfNeeded(error)
+                }
             }
+            print("Fail3")
+            self.showErrorIfNeeded(error)
         }
 
     }
