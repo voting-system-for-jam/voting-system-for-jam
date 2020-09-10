@@ -631,7 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MU4WL482ZB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "voting-system/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

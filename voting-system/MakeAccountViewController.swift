@@ -19,6 +19,7 @@ class MakeAccountViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        passwordTextField.isSecureTextEntry = true
     }
     
     @IBAction func back_to_loginView(_ sender: Any) {

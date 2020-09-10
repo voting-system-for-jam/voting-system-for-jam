@@ -255,7 +255,6 @@
                                 <state key="normal" title="送信"/>
                                 <connections>
                                     <action selector="sendFunction:" destination="Rji-xP-fpr" eventType="touchUpInside" id="iHQ-6N-mhM"/>
-                                    <segue destination="mqB-Iu-hWI" kind="presentation" id="gvM-J8-7WM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-jQ-LgB">
@@ -295,6 +294,7 @@
                         <outlet property="make_accountButton" destination="kIf-jQ-LgB" id="oPI-Dy-qpo"/>
                         <outlet property="passwordTextField" destination="jdr-cB-P5C" id="xvc-E4-qrz"/>
                         <outlet property="sendButton" destination="7YJ-B5-Jta" id="xNW-DO-eSr"/>
+                        <segue destination="mqB-Iu-hWI" kind="presentation" identifier="successLogin" id="eTQ-5Z-lMS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4y6-sB-zCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -451,6 +451,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K8J-Ke-D0d"/>
+        <segue reference="eTQ-5Z-lMS"/>
     </inferredMetricsTieBreakers>
 </document>
