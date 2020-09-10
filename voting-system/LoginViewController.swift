@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -29,6 +30,18 @@ class LoginViewController: UIViewController {
     @IBAction func sendFunction(_ sender: Any) {
         emailTextField.endEditing(true)
         passwordTextField.endEditing(true)
+        
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+            guard let self = self else { return }
+            if let user = result?.user {
+                // サインイン後の画面へ
+                print("OK")
+            }
+            //self.showErrorIfNeeded(error)
+        }
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
