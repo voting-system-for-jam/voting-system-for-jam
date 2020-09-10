@@ -53,7 +53,9 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "successLogin", sender: nil)
                 
             }else{
-              self.showErrorIfNeeded(error)
+//                最後にここを消す(2行)
+                self.performSegue(withIdentifier: "successLogin", sender: nil)
+                self.showErrorIfNeeded(error)
             }
         }
     }

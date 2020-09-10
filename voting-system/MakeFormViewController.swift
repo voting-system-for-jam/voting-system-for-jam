@@ -11,7 +11,7 @@ import UIKit
 class MakeFormViewController: UIViewController {
     
     
-    @IBOutlet weak var backButton: UIButton!
+    
     @IBOutlet weak var makeNewFormButton: UIButton!
     
     override func viewDidLoad() {
@@ -20,9 +20,7 @@ class MakeFormViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backBeforeView(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+    
     
     /*
     // MARK: - Navigation
