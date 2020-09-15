@@ -23,6 +23,7 @@ class NewFormViewController: UIViewController {
     let textW = 300
     let textH = 30
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,7 +59,7 @@ class NewFormViewController: UIViewController {
     func createContentsView() -> UIView {
         let contentsView = UIView()
 //        ここのheightを変更
-        contentsView.frame = CGRect(x:0, y:0, width:414, height:1200)
+        contentsView.frame = CGRect(x:0, y:0, width:self.view.frame.width, height:1200)
         
         for _ in 1...10{
             let label = createLabel(contentsView: contentsView)
@@ -76,7 +77,7 @@ class NewFormViewController: UIViewController {
         print("configureSV")
        
         scrollView.frame = self.view.frame
-        scrollView.contentSize = CGSize(width:scrollView.frame.width,height:1000)
+        scrollView.contentSize = CGSize(width:0,height:1000)
         self.view.addSubview(scrollView)
         let subView = createContentsView()
         scrollView.addSubview(subView)
@@ -85,6 +86,8 @@ class NewFormViewController: UIViewController {
         
         
     }
+    
+    
     
     @IBAction func backButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -99,7 +102,6 @@ class NewFormViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-        scrollView.endEditing(true)
     }
     
     /*
