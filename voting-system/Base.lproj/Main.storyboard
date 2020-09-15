@@ -309,14 +309,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-UK-6rQ">
-                                <rect key="frame" x="20" y="29" width="31" height="30"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="backBeforeView:" destination="mqB-Iu-hWI" eventType="touchUpInside" id="OCf-wn-8da"/>
-                                    <action selector="backViewController:" destination="Rji-xP-fpr" eventType="touchUpInside" id="I9X-2V-oKx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フォーム管理画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpc-fz-W6f">
                                 <rect key="frame" x="137.5" y="72" width="139" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -354,14 +346,11 @@
                             <constraint firstItem="Vpc-fz-W6f" firstAttribute="top" secondItem="prb-H3-0ez" secondAttribute="top" constant="72" id="EQn-fU-fIi"/>
                             <constraint firstItem="Vpc-fz-W6f" firstAttribute="centerX" secondItem="OrP-w0-kuE" secondAttribute="centerX" id="QWI-P0-p7W"/>
                             <constraint firstItem="yF2-fJ-Hqp" firstAttribute="centerX" secondItem="OrP-w0-kuE" secondAttribute="centerX" id="n6f-c2-Apm"/>
-                            <constraint firstItem="gM9-UK-6rQ" firstAttribute="top" secondItem="prb-H3-0ez" secondAttribute="top" constant="29" id="nv0-hJ-3iG"/>
-                            <constraint firstItem="gM9-UK-6rQ" firstAttribute="leading" secondItem="prb-H3-0ez" secondAttribute="leading" constant="20" id="uEK-jB-Sg6"/>
                             <constraint firstItem="55j-np-QZH" firstAttribute="top" secondItem="yF2-fJ-Hqp" secondAttribute="bottom" constant="100" id="vZe-Ka-Cgj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="prb-H3-0ez"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="gM9-UK-6rQ" id="ukA-OD-Yrd"/>
                         <outlet property="makeNewFormButton" destination="yF2-fJ-Hqp" id="OgP-Qh-VXW"/>
                     </connections>
                 </viewController>
@@ -416,7 +405,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkQ-Dc-Ndc">
                                 <rect key="frame" x="191.5" y="290" width="31" height="30"/>
-                                <state key="normal" title="送信"/>
+                                <state key="normal" title="次へ"/>
                                 <connections>
                                     <action selector="send_form:" destination="m3o-Ip-byj" eventType="touchUpInside" id="b6Y-UA-HqN"/>
                                 </connections>
@@ -447,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMH-8E-1wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186.9565217391305" y="-654.24107142857144"/>
+            <point key="canvasLocation" x="2202.898550724638" y="-731.25"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
