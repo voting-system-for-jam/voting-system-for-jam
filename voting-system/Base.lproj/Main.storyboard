@@ -410,12 +410,6 @@
                                     <action selector="send_form:" destination="m3o-Ip-byj" eventType="touchUpInside" id="b6Y-UA-HqN"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hj-ul-U4v">
-                                <rect key="frame" x="0.0" y="316" width="414" height="526"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Kub-j1-2MC"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="8Ql-bN-cRx"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -437,7 +431,6 @@
                     <connections>
                         <outlet property="backButton" destination="Zmj-EH-HRI" id="Hsn-z3-6d7"/>
                         <outlet property="formTextField" destination="N9f-v9-9iP" id="iJJ-hn-srr"/>
-                        <outlet property="scrollView" destination="2hj-ul-U4v" id="1XG-2M-4Vt"/>
                         <outlet property="teamNumberTextField" destination="1Qs-gh-chk" id="lqp-Ue-p9B"/>
                     </connections>
                 </viewController>

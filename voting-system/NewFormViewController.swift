@@ -10,15 +10,18 @@ import UIKit
 
 class NewFormViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var formTextField: UITextField!
     @IBOutlet weak var teamNumberTextField: UITextField!
     
-//    let scrollView = UIScrollView()
+    let scrollView = UIScrollView()
     var labelY = 10
-    var textY = 20
+    var textY = 60
     var count = 1
+    let labelW = 95
+    let labelH = 50
+    let textW = 300
+    let textH = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +35,12 @@ class NewFormViewController: UIViewController {
         print("label")
         let label = UILabel()
         
-        let labelX = contentsView.center.x
-        label.frame = CGRect(x:Int(labelX), y:labelY,width:95,height:50)
+        let labelX = 20
+        label.frame = CGRect(x:Int(labelX), y:labelY,width:labelW,height:labelH)
+        
+        label.layer.borderWidth = 1.0
+        label.layer.borderColor = UIColor.blue.cgColor
+        
         label.text = "チーム" + String(count)
         return label
     }
@@ -41,10 +48,10 @@ class NewFormViewController: UIViewController {
     func createText(contentsView: UIView) -> UITextField {
         let text = UITextField()
         
-        let textX = contentsView.center.x
-        text.frame = CGRect(x:Int(textX), y:textY,width:95,height:50)
+        let textX = 20
+        text.frame = CGRect(x:Int(textX), y:textY,width:textW,height:textH)
         text.layer.borderWidth = 1.0
-        text.layer.borderColor = UIColor.red.cgColor
+        text.layer.borderColor = UIColor.black.cgColor
         return text
     }
     
@@ -67,10 +74,15 @@ class NewFormViewController: UIViewController {
     
     func configureSV() {
         print("configureSV")
+       
+        scrollView.frame = self.view.frame
+        scrollView.contentSize = CGSize(width:scrollView.frame.width,height:1000)
+        self.view.addSubview(scrollView)
         let subView = createContentsView()
         scrollView.addSubview(subView)
-        
         scrollView.contentSize = subView.frame.size
+        scrollView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
         
     }
     
@@ -87,6 +99,7 @@ class NewFormViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        scrollView.endEditing(true)
     }
     
     /*
