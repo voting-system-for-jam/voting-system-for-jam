@@ -15,13 +15,13 @@ class NewFormViewController: UIViewController {
     @IBOutlet weak var teamNumberTextField: UITextField!
     
     let scrollView = UIScrollView()
-    var labelY = 10
-    var textY = 60
-    var count = 1
+    var labelY = 60
+    var textY = 110
     let labelW = 95
     let labelH = 50
     let textW = 300
     let textH = 30
+    var count = 1
     
     
     override func viewDidLoad() {
@@ -56,10 +56,33 @@ class NewFormViewController: UIViewController {
         return text
     }
     
+    func createCancelButton(contentsView: UIView) -> UIButton {
+        let cancelButton = UIButton()
+        let buttonX = 20
+        let buttonY = 20
+        let buttonW = 45
+        let buttonH = 30
+        cancelButton.frame = CGRect(x:Int(buttonX),y:buttonY,width:buttonW,height:buttonH)
+        cancelButton.layer.borderWidth = 1.0
+        cancelButton.layer.borderColor = UIColor.black.cgColor
+        cancelButton.setTitle("戻る", for: .normal)
+        cancelButton.setTitleColor(.blue, for: .normal)
+        cancelButton.addTarget(self, action: #selector(pushButton), for: .touchUpInside)
+        
+        return cancelButton
+    }
+    @objc func pushButton(sender: UIButton) {
+        print("push")
+        scrollView.removeFromSuperview()
+    }
+    
     func createContentsView() -> UIView {
         let contentsView = UIView()
 //        ここのheightを変更
         contentsView.frame = CGRect(x:0, y:0, width:self.view.frame.width, height:1200)
+        
+        let cancelButton = createCancelButton(contentsView: contentsView)
+        contentsView.addSubview(cancelButton)
         
         for _ in 1...10{
             let label = createLabel(contentsView: contentsView)
@@ -83,7 +106,6 @@ class NewFormViewController: UIViewController {
         scrollView.addSubview(subView)
         scrollView.contentSize = subView.frame.size
         scrollView.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
         
     }
     
